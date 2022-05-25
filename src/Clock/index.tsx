@@ -35,7 +35,7 @@ export default (props: PropsType) => {
 
       ctx.clearRect(55, 55, 20, 20);
 
-      // 描边
+      // 描
       ctx.strokeStyle = "red";
       ctx.strokeRect(160, 10, 50, 50);
 
