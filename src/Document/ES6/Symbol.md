@@ -1,14 +1,14 @@
 ---
 nav:
-  title: Documents
-  path: /documents
-group: 
-    path: /ES6
-    title: ES6
+title: Documents
+path: /documents
+group:
+path: /ES6
+title: ES6
 ---
 
-## symbol
- ES5中的对象名都是字符串，难免产生冲突，ES6为了解决这个问题，因此引入了Symbol
+## Symbol
+ES5中的对象名都是字符串，难免产生冲突，ES6为了解决这个问题，因此引入了Symbol
 ```tsx | pure
 let s = Symbol();
 typeof s
@@ -94,8 +94,8 @@ Reflect.ownKeys(obj)
 // [Symbol(a), Symbol(b)]
 ```
 ### symbol.for
-- 创建时会去全局查找是否已有这个key 的symbol值, 如果已经有了就直接返回这个symbol，没有就创建一个，并注册到全局；
-- 不管有没有在全局运行，`Symbol.for()`都会登记到全局； 
+- 创建时会去全局查找是否已有这个key 的symbol值，如果已经有了就直接返回这个symbol，没有就创建一个，并注册到全局；
+- 不管有没有在全局运行，`Symbol.for()`都会登记到全局；
 - `Symbol()`每次都返回一个新值，而`Symbol.for()`会去查找是否有相同的key；
 ```tsx | pure
 let s1 = Symbol.for('foo');
@@ -115,7 +115,7 @@ Symbol.keyFor(s2) // undefined
 ```
 ### 内置的Symbol值
 #### Symbol.hasInstance
-- 当使用`instanceof`运算符时,就会调用这个方法，`foo instanceof Foo`在语言内部，实际调用的是`Foo[Symbol.hasInstance](foo)`
+- 当使用`instanceof`运算符时，就会调用这个方法，`foo instanceof Foo`在语言内部，实际调用的是`Foo[Symbol.hasInstance](foo)`
 ```tsx | pure
 class MyClass {
   [Symbol.hasInstance](foo) {
