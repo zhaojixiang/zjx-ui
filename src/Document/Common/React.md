@@ -35,3 +35,27 @@ title: ES6
 #### 详解 React useCallback & useMemo
 
 [详解 React useCallback & useMemo](https://juejin.cn/post/6844904101445124110)
+
+#### React Hooks 为什么不能放在条件判断中？
+
+[不要在循环，条件或嵌套函数中调用 Hook](https://blog.csdn.net/gtLBTNq9mr3/article/details/119880486)
+
+#### React 中使用的是事件冒泡还是事件委托？
+
+[React 事件委托机制详解](https://juejin.cn/post/6927981303313006599)
+
+- react 16 版本使用的是将事件绑定在 document 上，在冒泡阶段进行事件处理；
+- react 17 版本使用的是事件委托，将逻辑处理放在根元素上；
+
+#### react 如何在 setState 后立马拿到数据？
+
+- setState 回调函数；
+- hooks 中：useEffects 监听变化；使用 useRef 保存数据；使用函数将值传递给使用的地方；
+
+#### React 中如何将组件的 ref 暴露出去？
+
+#### react 中 hash router
+
+[前端路由和 react-router 实现原理详解](https://juejin.cn/post/6844904094772002823)
+
+#### React 中的 diff 有哪些规则？
