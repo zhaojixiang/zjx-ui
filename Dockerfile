@@ -1,6 +1,6 @@
 FROM nginx
 
-COPY ./dist/ /usr/share/nginx/html/
-COPY ./vhost.nginx.conf /etc/nginx/conf.d/pea3nut-info.conf
+COPY ./docs-dist/ /usr/share/nginx/html/
+COPY ./vhost.nginx.conf /etc/nginx/conf.d/zjx-ui.conf
 
 EXPOSE 80
